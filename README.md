@@ -37,8 +37,12 @@ In this base class, the area method prints a message indicating that the area is
             self.radius = radius
 
         def area(self):
-            print("Calculating area of a circle..")
+            print("Calculating area of a circle...")
             super().area()
             return 3.14 * self.radius * self.radius
-            
-                
+
+In this example, the Circle class overrides the area method, and calls the base class method using the super funciton. This allows you to extend the behavior of the base class method, while still maintining its original behavior.
+
+In conclusion, method overriding is a powerful feature in Python that allows you to customize the behaviour of a class based on its specific needs. By using method overriding, you can create more robust and relible code, and ensure that your classes behave in the way that you need them to. Additionally, by using the super function, you can extend the behavior of a base class method, rather taht replace it, giving you even greater flexibility and control over the behavior of your classes.
+
+
